@@ -1,11 +1,11 @@
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://packagist.org/packages/raditzfarhan/lumen-command-generator)
-[![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://packagist.org/packages/raditzfarhan/lumen-command-generator)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://packagist.org/packages/mazfreelance/laravel-command-generator)
+[![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://packagist.org/packages/mazfreelance/laravel-command-generator)
 [![Latest Version](https://img.shields.io/github/tag/mazfreelance/laravel-command-generator.svg?style=flat-square&label=release)](https://github.com/mazfreelance/laravel-command-generator/tags)
-[![Build Status](https://img.shields.io/travis/bedezign/yii2-audit/master.svg?style=flat-square)](https://travis-ci.org/bedezign/yii2-audit)
-[![HHVM](https://img.shields.io/hhvm/bedezign/yii2-audit.svg?style=flat-square)](http://hhvm.h4cc.de/package/bedezign/yii2-audit)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/bedezign/yii2-audit.svg?style=flat-square)](https://scrutinizer-ci.com/g/bedezign/yii2-audit/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/bedezign/yii2-audit.svg?style=flat-square)](https://scrutinizer-ci.com/g/bedezign/yii2-audit)
-[![Total Downloads](https://img.shields.io/packagist/dt/bedezign/yii2-audit.svg?style=flat-square)](https://packagist.org/packages/bedezign/yii2-audit)
+[![Build Status](https://img.shields.io/travis/mazfreelance/laravel-command-generator/master.svg?style=flat-square)](https://travis-ci.org/mazfreelance/laravel-command-generator)
+[![HHVM](https://img.shields.io/hhvm/mazfreelance/laravel-command-generator.svg?style=flat-square)](http://hhvm.h4cc.de/package/bedezign/yii2-audit)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazfreelance/laravel-command-generator/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazfreelance/laravel-command-generator)
+[![Total Downloads](https://img.shields.io/packagist/dt/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://packagist.org/packages/mazfreelance/laravel-command-generator)
 [![Laravel Framework](https://img.shields.io/badge/extension-Laravel_Framework-green.svg?style=flat-square)](#)
 
 # Laravel Command Generator
