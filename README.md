@@ -37,6 +37,9 @@ $app->register(Mazfreelance\LaravelCommandGenerator\ServiceProvider::class);
 ...
 ```
 
+#### [Additional command for Lumen Only](https://github.com/raditzfarhan/lumen-command-generator)
+
+
 
 ## Available Commands
 
