@@ -1,0 +1,21 @@
+<?php
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use Spatie\DataTransferObject\DataTransferObject;
+
+/**
+ * @reference https://github.com/spatie/data-transfer-object
+ */
+class DummyClass extends DataTransferObject
+{
+    public $data;
+
+    public static function fromRequest(Request $request): self
+    {
+        return new self([
+            'data' => $request->data,
+        ]);
+    }
+    
+}

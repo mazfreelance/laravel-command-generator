@@ -1,0 +1,25 @@
+<?php
+namespace DummyNamespace;
+
+use App\User;
+
+class DummyClass
+{
+    private $users;
+
+    /**
+       * Instantiate reporitory
+       * 
+       * @param User $users
+       */
+    public function __construct(User $users)
+    {
+        $this->users = $users;
+    }
+
+    
+    public function execute() 
+    {
+        // 
+    }
+}
