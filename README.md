@@ -2,7 +2,6 @@
 [![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://packagist.org/packages/mazfreelance/laravel-command-generator)
 [![Latest Version](https://img.shields.io/github/tag/mazfreelance/laravel-command-generator.svg?style=flat-square&label=release)](https://github.com/mazfreelance/laravel-command-generator/tags)
 [![Build Status](https://img.shields.io/travis/mazfreelance/laravel-command-generator/master.svg?style=flat-square)](https://travis-ci.org/mazfreelance/laravel-command-generator)
-[![HHVM](https://img.shields.io/hhvm/mazfreelance/laravel-command-generator.svg?style=flat-square)](http://hhvm.h4cc.de/package/bedezign/yii2-audit)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazfreelance/laravel-command-generator/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazfreelance/laravel-command-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/mazfreelance/laravel-command-generator.svg?style=flat-square)](https://packagist.org/packages/mazfreelance/laravel-command-generator)
