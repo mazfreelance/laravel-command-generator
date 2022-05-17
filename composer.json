@@ -2,10 +2,10 @@
     "name": "mazfreelance/laravel-command-generator",
     "description": "This is a simple package that includes some of custom Laravel artisan command into Laravel/Lumen.",
     "require": {
-        "php": "^7.2.5|^8.0",
-        "illuminate/console": "^6.0|^7.0|^8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0",
-        "spatie/data-transfer-object": "^1.3|^2.8"
+        "php": "^8.0",
+        "illuminate/console": "^9.0",
+        "illuminate/support": "^9.0",
+        "spatie/data-transfer-object": "^3.7"
     },
     "license": "MIT",
     "autoload": {
