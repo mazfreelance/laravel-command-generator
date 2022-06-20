@@ -10,10 +10,18 @@ This is a simple package that includes some of custom Laravel artisan command in
 
 ## Installation
 
+Note: This repository now follows the Laravel/Lumen framework versioning. Use the appropriate version of this package for your Laravel/Lumen application.
+
 You can install the package via composer:
 
 ```bash
-composer require mazfreelance/laravel-command-generator --dev
+composer require mazfreelance/laravel-command-generator
+```
+
+#### PHP7.x or below
+
+```bash
+composer require mazfreelance/laravel-command-generator=^1.0.0
 ```
 
 ## Configuration
