@@ -13,6 +13,18 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__ . '/../config/custom-command.php' => config_path('custom-command.php'),
+        ]);
+    }
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
         $commands = [
             'ActionCommand',
             'DataTransferObjectCommand',
@@ -24,15 +36,5 @@ class ServiceProvider extends LaravelServiceProvider
                 return __NAMESPACE__ . "\Commands\\$name";
             })->toArray());
         }
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }

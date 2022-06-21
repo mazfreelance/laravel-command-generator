@@ -25,35 +25,71 @@ composer require mazfreelance/laravel-command-generator=^1.0.0
 ```
 
 ## Configuration
-
-### Laravel
-Edit the `config/app.php` file and add the following line to `providers`:
-
-```php
-...
-Mazfreelance\LaravelCommandGenerator\ServiceProvider::class
-...
-```
-
-
-### Lumen
-Edit the `bootstrap/app.php` file and add the following line to register the service provider:
-
-```php
-...
-$app->register(Mazfreelance\LaravelCommandGenerator\ServiceProvider::class);
-...
-```
-
-#### [Additional command for Lumen Only](https://github.com/raditzfarhan/lumen-command-generator)
-
-
-
-## Available Commands
+### Available Commands
 
 ``` bash
 make:action         Create a new Action class
 make:dto            Create a new Data Transfer Object class
+```
+
+#### Default Settings
+The default namespace for all command are `App\Actions\` and each name expects the filter classname to follow the `{$Name}Action` naming convention.  Here is an example of action and data transfer objects based on the default naming convention.
+
+| Actions                         | Data Transfer Object        |
+|---------------------------------|-----------------------------|
+| `App\Actions\UserFilter`        | `App\DTO\UserFilter`        |
+| `App\Actions\PrivatePostFilter` | `App\DTO\PrivatePostFilter` |
+| `App\Actions\GuestPostFilter`   | `App\DTO\GuestPostFilter`   |
+
+#### Laravel
+
+##### With Configuration File (Optional)
+
+> Registering the service provider will give you access to the `php artisan model:action {name}` command as well as allow you to publish the configuration file.  Registering the service provider is not required and only needed if you want to change the default namespace or use the artisan command
+
+After installing the Custom Command library, register the `Mazfreelance\LaravelCommandGenerator\ServiceProvider::class` in your `config/app.php` configuration file:
+
+```php
+'providers' => [
+    // Other service providers...
+
+    Mazfreelance\LaravelCommandGenerator\ServiceProvider::class,
+],
+```
+
+Copy the package config to your local config with the publish command:
+
+```bash
+php artisan vendor:publish --provider="Mazfreelance\LaravelCommandGenerator\ServiceProvider::class"
+```
+
+In the `config/custom-command.php` config file.  Set the namespace your model filters will reside in:
+
+```php
+'namespace' => [
+    'action' => 'App\\Actions\\',
+    'dto' => 'App\\DTO\\',
+]
+```
+#### Lumen
+
+##### Register The Service Provider (Optional)
+
+>This is only required if you want to use the `php artisan make:action|dto` command. [refer](#available-commands)
+
+In `bootstrap/app.php`:
+
+```php
+$app->register(Mazfreelance\LaravelCommandGenerator\ServiceProvider::class);
+```
+
+##### Change The Default Namespace
+
+In `bootstrap/app.php`:
+
+```php
+config(['custom-command.action.namespace' => "App\\Actions\\"]);
+config(['custom-command.dto.namespace' => "App\\DTO\\"]);
 ```
 
 ## Change log
@@ -67,3 +103,6 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 ## License
 
 MIT. Please see the [license file](LICENSE) for more information.
+
+## Other command for Lumen
+#### [Additional command](https://github.com/raditzfarhan/lumen-command-generator)
