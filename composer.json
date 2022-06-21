@@ -7,12 +7,12 @@
         "custom command"
     ],
     "require": {
-        "php": "^7.2.5|^8.0",
-        "illuminate/console": "^6.0|^7.0|^8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0",
-        "illuminate/config": "~6.0|~7.0|~8.0",
-        "illuminate/filesystem": "~6.0|~7.0|~8.0",
-        "spatie/data-transfer-object": "^1.3|^2.8"
+        "php": "^8.0",
+        "illuminate/console": "~9.0",
+        "illuminate/support": "~9.0",
+        "illuminate/config": "~9.0",
+        "illuminate/filesystem": "~9.0",
+        "spatie/data-transfer-object": "~3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8",
