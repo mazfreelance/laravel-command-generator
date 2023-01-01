@@ -63,6 +63,15 @@ Copy the package config to your local config with the publish command:
 php artisan vendor:publish --provider="Mazfreelance\LaravelCommandGenerator\ServiceProvider::class"
 ```
 
+If install version 2.1.0 (Lumen can use this part if install [`mazfreelance/lumen-vendor-publish`](https://github.com/mazfreelance/lumen-vendor-publish)),
+
+Optionally, You can publish the config file with:
+```bash
+# If install version 2.1.0
+# Optionally, You can publish the config file with:
+php artisan vendor:publish --provider="Spatie\LaravelData\LaravelDataServiceProvider" --tag="data-config"
+```
+
 In the `config/custom-command.php` config file.  Set the namespace your model filters will reside in:
 
 ```php
@@ -73,14 +82,19 @@ In the `config/custom-command.php` config file.  Set the namespace your model fi
 ```
 #### Lumen
 
-##### Register The Service Provider (Optional)
+##### Register The Service Provider
 
->This is only required if you want to use the `php artisan make:action|dto` command. [refer](#available-commands)
+>This is only required if you want to use the `php artisan make:action|dto` command. [#Avaiable Command](#available-commands)
 
 In `bootstrap/app.php`:
 
 ```php
 $app->register(Mazfreelance\LaravelCommandGenerator\ServiceProvider::class);
+```
+
+```php
+// If install version 2.1.0,
+$app->register(Spatie\LaravelData\LaravelDataServiceProvider::class);
 ```
 
 ##### Change The Default Namespace
@@ -96,6 +110,10 @@ config(['custom-command.dto.namespace' => "App\\DTO\\"]);
 
 Please see the [changelog](CHANGELOG.md) for more information on what has changed recently.
 
+## Other command for Lumen
+- [Additional lumen command](https://github.com/raditzfarhan/lumen-command-generator)
+- [Lumen Vendor Publish](https://github.com/mazfreelance/lumen-vendor-publish)
+
 ## Credits
 
 - [Mazfreelance](https://github.com/mazfreelance)
@@ -103,6 +121,3 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 ## License
 
 MIT. Please see the [license file](LICENSE) for more information.
-
-## Other command for Lumen
-#### [Additional command](https://github.com/raditzfarhan/lumen-command-generator)
