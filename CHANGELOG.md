@@ -2,6 +2,9 @@
 
 All notable changes to Laravel Command Generator will be documented in this file.
 
+## Version 2.2.0
+- support laravel / lumen 10
+
 ## Version 2.1.0
 - remove `spatie/data-transfer-object` because abandoned packages.
 - add `spatie/laravel-data`. References: [docs/laravel-data](https://spatie.be/docs/laravel-data)
